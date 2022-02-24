@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Testing Prodigia",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "commander": "^7.2.0",
+    "csv-string": "^4.0.1",
+    "express": "^4.17.2",
+    "fs": "0.0.1-security",
+    "inquirer": "^8.1.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.14",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js",
+    "xml33": "set SERVICE=timbrado&& set SERVER=local&& node index.js t"
+  },
+  "author": "Javier García",
+  "license": "ISC"
+}
