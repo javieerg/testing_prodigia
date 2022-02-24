@@ -1,15 +1,23 @@
 const { prompt } = require('inquirer');
 const program = require('commander');
 
-const XMLs = require('./wrappers/xml');
+if (process.env.NODE_ENV.trim() !== "dev") {
+  console.log("Loading LOCAL env");
+  require("./config/local");
+} else {
+  console.log("Loading DEV env");
+  require("./config/dev");
+}
+
+const XMLs = require('./workers/prodigia/xml');
 
 const xml = new XMLs();
 
 let value = [
   {
     type: 'input',
-    name: 'issue',
-    message: 'Issue ID'
+    name: 'xml',
+    message: 'XML name'
   }
 ];
 
@@ -23,7 +31,7 @@ program
   .alias('t')
   .description('Test timbrado service')
   .action(() => {
-    prompt(value).then((answer) => xml.readXML(answer.issue));
+    prompt(value).then((answer) => xml.readXML(answer.xml));
   });
 
 program.parse(process.argv);

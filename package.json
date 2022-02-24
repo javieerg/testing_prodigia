@@ -18,7 +18,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "node index.js",
-    "xml33": "set SERVICE=timbrado&& set SERVER=local&& node index.js t"
+    "xml33": "set NODE_ENV=local&& set TYPE=xml&& node index.js t"
   },
   "author": "Javier García",
   "license": "ISC"
