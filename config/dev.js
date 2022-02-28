@@ -5,6 +5,6 @@ process.env.RF = "610";
 process.env.SERVICE = {
   "TIMBRADO": {
     "URL": "http://pruebas.pade.mx:80/servicio/Timbrado3.3?wsdl",
-      "NAME": "timbradoPrueba"
+    "NAME": "timbradoPrueba"
   }
 }

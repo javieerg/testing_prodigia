@@ -7,9 +7,9 @@ class Prodigia {
     try {
       let getURL, getService;
       switch (process.env.TYPE) {
-        case 'xml':
-          getURL = process.env.SERVICE.XML.URL;
-          getService = process.env.SERVICE.XML.NAME;
+        case 'xml33':
+          getURL = process.env.SERVICE.XML33.URL;
+          getService = process.env.SERVICE.XML33.NAME;
           break;
 
         default:
