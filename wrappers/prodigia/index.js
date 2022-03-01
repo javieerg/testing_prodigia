@@ -8,8 +8,8 @@ class Prodigia {
       let getURL, getService;
       switch (process.env.TYPE) {
         case 'xml33':
-          getURL = process.env.SERVICE.XML33.URL;
-          getService = process.env.SERVICE.XML33.NAME;
+          getURL = process.env.XML33;
+          getService = process.env.NAME;
           break;
 
         default:
@@ -21,6 +21,7 @@ class Prodigia {
       let getXML = await parser.parseStringPromise(getData['S:Envelope']['S:Body'][0][`ns2:${getService}Response`][0]['return'][0]);
       return getXML;
     } catch (e) {
+      console.log(e);
       return 'Sending request error';
     }
   }

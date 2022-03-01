@@ -2,9 +2,5 @@ process.env.CERT = 'MIIFljCCA36gAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDIzMzIwDQYJKoZIhvcN
 process.env.NoCERT = '30001000000400002332';
 process.env.RFC = 'MISC491214B86';
 process.env.RF = '610';
-process.env.SERVICE = {
-  'XML33': {
-    'URL': 'http://localhost:8080/servicio/Timbrado3.3?wsdl',
-    'NAME': 'timbradoPrueba'
-  }
-}
+process.env.XML33 = 'http://localhost:8080/servicio/Timbrado3.3?wsdl';
+process.env.NAME = 'timbradoPrueba';

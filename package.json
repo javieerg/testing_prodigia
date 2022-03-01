@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Testing Prodigia",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "axios": "^0.21.1",
     "commander": "^7.2.0",
     "csv-string": "^4.0.1",
@@ -15,10 +16,10 @@
     "xml-js": "^1.6.11",
     "xml2js": "^0.4.23"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "node index.js",
-    "xml33": "set NODE_ENV=local&& set TYPE=xml33&& node index.js t"
+    "xml33": "set NODE_ENV=local&& set TYPE=xml33&& node index.js t",
+    "xml33_dev": "set NODE_ENV=dev&& set TYPE=xml33&& node index.js t"
   },
   "author": "Javier García",
   "license": "ISC"
